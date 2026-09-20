@@ -22,7 +22,7 @@ This is the exact configuration that was deployed and verified end-to-end on an 
 ## Quick start
 
 ```bash
-git clone https://github.com/YOUR_USER/qwen3.8-flash-next-rtx3090.git
+git clone https://github.com/MDsniper/qwen3.8-flash-next-rtx3090.git
 cd qwen3.8-flash-next-rtx3090
 
 # 1. Build thecodacus/llama.cpp perf branch with CUDA (~10 min)

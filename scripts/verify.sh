@@ -17,7 +17,9 @@ r = json.load(sys.stdin)
 t = r["timings"]
 msg = r["choices"][0]["message"]
 print("answer:", (msg.get("content") or msg.get("reasoning_content",""))[:200])
-print(f"prefill {t[\"prompt_per_second\"]:.1f} t/s | decode {t[\"predicted_per_second\"]:.2f} t/s | draft {t.get(\"draft_n_accepted\")}/{t.get(\"draft_n\")} accepted")
+pp, dp = t["prompt_per_second"], t["predicted_per_second"]
+da, dn = t.get("draft_n_accepted"), t.get("draft_n")
+print(f"prefill {pp:.1f} t/s | decode {dp:.2f} t/s | draft {da}/{dn} accepted")
 assert t.get("draft_n", 0) > 0, "MTP speculative decoding NOT engaged"
 '
 

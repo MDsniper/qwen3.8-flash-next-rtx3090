@@ -1,0 +1,6 @@
+# model weights + generated artifacts (fetch via scripts/download-model.sh)
+UD-IQ3_XXS/
+MTP/
+*.gguf
+*.csv
+*.log

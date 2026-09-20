@@ -140,3 +140,7 @@ curl http://localhost:8080/v1/chat/completions -H 'Content-Type: application/jso
 - Model: [unsloth/Qwen3.8-Flash-Next-GGUF](https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF) (Unsloth Dynamic IQ3_XXS + MTP heads)
 - Fork: [thecodacus/llama.cpp](https://github.com/thecodacus/llama.cpp) `perf` branch — MoE expert cache, MTP spec decoding, qwen4exp support
 - Also see: [OptLlama wiki](https://github.com/generelschwerz/llama.cpp/wiki)
+
+## License
+
+[MIT](LICENSE) — matching [llama.cpp](https://github.com/ggml-org/llama.cpp) and the [codacus fork](https://github.com/thecodacus/llama.cpp), which this repo's scripts build and configure but do not redistribute. Model weights are fetched directly from [unsloth's Hugging Face repo](https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF) and remain under their own license.
